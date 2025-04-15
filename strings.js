@@ -93,3 +93,35 @@ juice.replace("love", "hate");
 
 "ha ha ha".replace("ha", "hee");
 //hee ha ha - only replaces first instance
+
+//String escape characters ***************************************************
+//  \n - newline
+//  \' - single quote
+//  \" - double quote
+//  \\ - backslash
+
+//String Template Literals ****************************************************
+`I counted ${3 + 4} sheep`;
+//I counted 7 sheep
+//works out what's in curly brackets first
+
+let mammal = "pig";
+let sound = "oink";
+`${mammal} makes ${sound} noises`;
+//pig makes oink noises
+
+let item = "cucumber";
+let price = 1.99;
+let quantity = 4;
+`you bought ${quantity} ${item}, total price: £${price * quality}`;
+//you bought 4 cucumber, total price: £7.96
+
+//Null *********************************************************************
+let color = null;
+//intentional absence of any value
+//must be assigned
+
+//Undefined *****************************************************************
+"lol"[4];
+//undefined
+//variables that do not have an assigned value are undefined
